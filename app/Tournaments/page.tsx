@@ -14,6 +14,17 @@ export default function TournamentsPage() {
     { img: "/images/carousel-a5.png", button: "BET NGAY" },
   ];
 
+/*Nội dung của Tab*/
+  const tabs = [
+     { name: "Current Draws", href: "/" },
+     { name: "Team Tab", href: "/Tournaments" },
+     { name: "Speaker Tab", href: "/live" },
+     { name: "Results", href: "/profile" },
+     { name: "Standings", href: "/profil" },
+     { name: "Motions", href: "/prof" },
+     { name: "Participants", href: "/pro" },
+];
+ 
   const containerRef = useRef<HTMLDivElement>(null);
 
   /*Scroll tự động*/
@@ -76,9 +87,33 @@ useEffect(() => {
 
   return (
     <main className="bg-[#1B1B1B] min-h-screen">
+
+/*Logo*/
+<Link href="/">
+<button className="absolute top-10 left-12">
+<img src="/images/logo.png" className="logo" />
+</button>
+</Link>
+
+/*Top Tab*/
+      <div className="relative w-[1012px] h-[64px] absolute top-[14px] left-60">
+        <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"
+        ></div>
+        <div className="tab-wrapper absolute bottom-[6px] left-[6px]">
+        {tabs.map((tab) => (
+        <Link
+          key={tab.href}
+          href={tab.href}
+          className="tab"
+  >
+          {tab.name}
+        </Link>
+))}
+        </div>
+      </div>
     
 /*Carousel Jr*/
-      <div className="relative w-[680px] h-[280px] absolute left-10">
+      <div className="relative w-[680px] h-[280px] absolute top-30 left-82">
         /*Khung Marquee*/
         <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"
         ></div>

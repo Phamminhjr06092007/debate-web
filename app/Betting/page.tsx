@@ -1,26 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import Link from "next/link";
 
 export default function BettingPage() {
-  const [active, setActive] = useState(0);
 
-  const tabs = ["Home", "Games", "Live", "Profile"];
+  const tabs = [
+  { name: "Home", href: "/" },
+  { name: "Games", href: "/Tournaments" },
+  { name: "Live", href: "/live" },
+  { name: "Profile", href: "/profile" },
+];
 
   return (
     <main style={{ padding: 20 }}>
       <h1>Betting Page</h1>
+      <img src="/images/logo.png" className="logo" />
 
       <div className="tab-wrapper">
-        {tabs.map((item, i) => (
-          <div
-            key={i}
-            className={`tab ${active === i ? "active" : ""}`}
-            onClick={() => setActive(i)}
-          >
-            {item}
-          </div>
-        ))}
+        {tabs.map((tab) => (
+        <Link
+          key={tab.href}
+          href={tab.href}
+          className="tab"
+  >
+          {tab.name}
+        </Link>
+))}
       </div>
     </main>
   );
