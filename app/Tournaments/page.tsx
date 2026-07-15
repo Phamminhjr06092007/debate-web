@@ -21,7 +21,7 @@ export default function TournamentsPage() {
      { name: "Speaker Tab", href: "/Speakertab" },
      { name: "Results", href: "/profile" },
      { name: "Standings", href: "/profil" },
-     { name: "Motions", href: "/prof" },
+     { name: "Motions", href: "/Motions" },
      { name: "Participants", href: "/pro" },
 ];
  
@@ -110,7 +110,7 @@ useEffect(() => {
         <div className="absolute inset-0 bg-[#7A0019] w-[260px] h-[280px] rounded-2xl border-[6px] border-[#C9A227]">
         </div>
 
-        /*Đèn top*/
+        {/*Đèn top*/}
         <div className="absolute top-4 left-4 right-4 flex justify-between z-20">
         {Array.from({ length: 7 }).map((_, i) => (
           <div
@@ -306,7 +306,7 @@ useEffect(() => {
 
         </button>
 
-         /*Đèn top*/
+         {/*Đèn top*/}
         <div className="absolute top-4 left-4 right-4 flex justify-between z-20">
         {Array.from({ length: 7 }).map((_, i) => (
           <div
@@ -320,7 +320,7 @@ useEffect(() => {
       ))}
         </div>
 
-        /*Đèn bot*/
+        {/*Đèn bot*/}
         <div className="absolute bottom-4 left-4 right-4 flex justify-between z-20">
         {Array.from({ length: 7 }).map((_, i) => (
         <div
@@ -335,7 +335,7 @@ useEffect(() => {
   ))}
         </div>
 
-        /*Đèn left*/
+        {/*Đèn left*/}
         <div className="absolute top-4 bottom-4 left-4 flex flex-col justify-between z-20">
         {Array.from({ length: 8 }).map((_, i) => (
         <div
@@ -350,7 +350,7 @@ useEffect(() => {
   ))}
         </div>
 
-        /*Đèn right*/
+        {/*Đèn right*/}
         <div className="absolute top-4 bottom-4 right-4 flex flex-col justify-between z-20">
         {Array.from({ length: 8 }).map((_, i) => (
         <div

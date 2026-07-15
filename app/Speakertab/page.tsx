@@ -29,6 +29,18 @@ const speakerRankings = [
     },
     {
       rank: 3,
+      name: "Lê Banh",
+      team: "team CCVA",
+      lis: 9,
+      read: 8.5,
+      speak: 7,
+      write: 7,
+      overall: 8,
+      stdev: 0.89,
+      num: 4,
+    },
+    {
+      rank: 4,
       name: "Chim",
       team: "Nhóm 2 training core tổng",
       lis: 6.7,
@@ -37,18 +49,6 @@ const speakerRankings = [
       write: 6.7,
       overall: 6.7,
       stdev: 0,
-      num: 4,
-    },
-    {
-      rank: 4,
-      name: "Ntg",
-      team: "HVT",
-      lis: 4.0,
-      read: 5.0,
-      speak: 4.5,
-      write: 5.0,
-      overall: 4.5,
-      stdev: 0.48,
       num: 4,
     },
   ];
@@ -60,7 +60,7 @@ const speakerRankings = [
      { name: "Speaker Tab", href: "/Speakertab" },
      { name: "Results", href: "/profile" },
      { name: "Standings", href: "/profil" },
-     { name: "Motions", href: "/prof" },
+     { name: "Motions", href: "/Motions" },
      { name: "Participants", href: "/pro" },
 ];
 
@@ -131,7 +131,7 @@ return (
 /*Chữ Speaker tab*/
       <div className="bg-[#7A0019] absolute top-[150px] left-[100px] w-[350px] h-[100px]
                      border-[6px] border-[#C9A227] rounded-2xl">
-        <p className="absolute top-[20px] left-[15] text-4xl font-bold text-white">
+        <p className="absolute top-[22px] left-[15px] text-4xl font-bold text-white">
         🥳 Speaker Tab 🥳
         </p>
       </div>
