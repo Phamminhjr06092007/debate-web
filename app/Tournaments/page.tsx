@@ -18,7 +18,7 @@ export default function TournamentsPage() {
   const tabs = [
      { name: "Current Draws", href: "/" },
      { name: "Team Tab", href: "/Tournaments" },
-     { name: "Speaker Tab", href: "/live" },
+     { name: "Speaker Tab", href: "/Speakertab" },
      { name: "Results", href: "/profile" },
      { name: "Standings", href: "/profil" },
      { name: "Motions", href: "/prof" },
@@ -95,8 +95,83 @@ useEffect(() => {
 </button>
 </Link>
 
+/*Overall*/
+      <div className="relative w-[260px] h-[280px] absolute top-[192px] left-[35px]">
+        <Link href="/">
+        <button className="absolute top-[40px] left-[40px] bg-[#3A3F44] w-[180px] h-[200px] rounded-2xl z-15 hover:brightness-75 transition duration-200">  
+          <p className="text-white font-bold absolute bottom-[8px] left-[35px]">
+          Tổng quan giải
+          </p>
+          <img src="/images/overview.png" className="absolute inset-0 rounded-t-2xl"></img>
+        </button>
+        </Link>
+        
+        /*Khung*/
+        <div className="absolute inset-0 bg-[#7A0019] w-[260px] h-[280px] rounded-2xl border-[6px] border-[#C9A227]">
+        </div>
+
+        /*Đèn top*/
+        <div className="absolute top-4 left-4 right-4 flex justify-between z-20">
+        {Array.from({ length: 7 }).map((_, i) => (
+          <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+        }}/>
+      ))}
+        </div>
+
+        /*Đèn bot*/
+        <div className="absolute bottom-4 left-4 right-4 flex justify-between z-20">
+        {Array.from({ length: 7 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
+        </div>
+
+        /*Đèn left*/
+        <div className="absolute top-4 bottom-4 left-4 flex flex-col justify-between z-20">
+        {Array.from({ length: 8 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+          boxShadow: "0 0 8px #FFF176",
+          animation: "marqueeBlink 1s infinite",
+          animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
+        </div>
+
+        /*Đèn right*/
+        <div className="absolute top-4 bottom-4 right-4 flex flex-col justify-between z-20">
+        {Array.from({ length: 8 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
+        </div>
+      </div>
+
 /*Top Tab*/
-      <div className="relative w-[1012px] h-[64px] absolute top-[14px] left-60">
+      <div className="relative w-[1012px] h-[64px] absolute top-[-290px] left-60">
         <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"
         ></div>
         <div className="tab-wrapper absolute bottom-[6px] left-[6px]">
@@ -113,7 +188,7 @@ useEffect(() => {
       </div>
     
 /*Carousel Jr*/
-      <div className="relative w-[680px] h-[280px] absolute top-30 left-82">
+      <div className="relative w-[680px] h-[280px] absolute top-[-200px] left-82">
         /*Khung Marquee*/
         <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"
         ></div>
@@ -222,6 +297,72 @@ useEffect(() => {
           </div>
         ))}
 
+        </div>
+      </div>
+    
+/*Betting*/
+      <div className="relative w-[260px] h-[280px] absolute top-[-504px] left-[1041px]">
+        <button className="bg-[#7A0019] w-[260px] h-[280px] rounded-2xl border-[6px] border-[#C9A227]">  
+
+        </button>
+
+         /*Đèn top*/
+        <div className="absolute top-4 left-4 right-4 flex justify-between z-20">
+        {Array.from({ length: 7 }).map((_, i) => (
+          <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+        }}/>
+      ))}
+        </div>
+
+        /*Đèn bot*/
+        <div className="absolute bottom-4 left-4 right-4 flex justify-between z-20">
+        {Array.from({ length: 7 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
+        </div>
+
+        /*Đèn left*/
+        <div className="absolute top-4 bottom-4 left-4 flex flex-col justify-between z-20">
+        {Array.from({ length: 8 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+          boxShadow: "0 0 8px #FFF176",
+          animation: "marqueeBlink 1s infinite",
+          animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
+        </div>
+
+        /*Đèn right*/
+        <div className="absolute top-4 bottom-4 right-4 flex flex-col justify-between z-20">
+        {Array.from({ length: 8 }).map((_, i) => (
+        <div
+          key={i}
+          className="w-4 h-4 rounded-full bg-[#FFD54F]"
+          style={{
+            boxShadow: "0 0 8px #FFF176",
+            animation: "marqueeBlink 1s infinite",
+            animationDelay: `${i * 0.08}s`,
+      }}
+    />
+  ))}
         </div>
       </div>
     </main>

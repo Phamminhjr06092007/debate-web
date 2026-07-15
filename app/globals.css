@@ -40,12 +40,11 @@ body {
 }
 /*ảnh bo tròn*/
 .logo {
-  width: 150px;
+  width: 152px;
   height: 60px;
   object-fit: cover;   /* giữ ảnh không bị méo */
   border-radius: 10%;  /* bo tròn hoàn toàn */
 }
-
 
 /*tab*/
 .tab-wrapper {
@@ -95,3 +94,77 @@ body {
   background: rgba(246, 255, 0, 0.08);
 }
 /*end tab*/
+
+/* Speaker Table */
+
+.speaker-table-wrapper {
+  width: 1000px;
+  max-width: 100%;
+  overflow-x: auto;
+
+  background:
+    radial-gradient(circle at 20% 20%, rgba(0, 255, 136, 0.22), transparent 35%),
+    radial-gradient(circle at 80% 70%, rgba(0, 180, 90, 0.15), transparent 40%),
+    linear-gradient(180deg, #0B5A2A, #063A1C);
+
+  border-radius: 12px;
+}
+
+.speaker-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #eef774;
+}
+
+/* Header */
+
+.speaker-table th {
+  padding: 14px;
+  text-align: center;
+  font-weight: 700;
+  color: #FFFF33;
+  border-bottom: 1px solid rgba(255, 255, 51, 0.3);
+}
+
+/* Body */
+
+.speaker-table td {
+  padding: 14px;
+  text-align: center;
+}
+
+/* Divider between rows */
+
+.speaker-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 51, 0.15);
+}
+
+/* Hover effect */
+
+.speaker-table tbody tr:hover {
+  background: rgba(246, 255, 0, 0.08);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Highlight Rank column */
+
+.speaker-table td:first-child {
+  color: #FFFF33;
+  font-weight: 700;
+}
+
+/* Highlight Name column */
+
+.speaker-table td:nth-child(2) {
+  font-weight: 600;
+}
+
+/* Smooth transition */
+
+.speaker-table th,
+.speaker-table td {
+  transition: all 0.2s ease;
+}
+
+/* End Speaker Table */
