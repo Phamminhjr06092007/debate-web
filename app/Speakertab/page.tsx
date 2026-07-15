@@ -16,7 +16,7 @@ const speakerRankings = [
       num: 6,
     },
     {
-      rank: 2,
+      rank: "=2",
       name: "Hùng Trương",
       team: "CVA B",
       lis: 9,
@@ -26,6 +26,17 @@ const speakerRankings = [
       overall: 8.0,
       stdev: 0.89,
       num: 6,
+    },
+    {rank: "=2",
+      name: "Trang Nhung",
+      team: "Đốt IDP",
+      lis: 9,
+      read: 9,
+      speak: 7.5,
+      write: 7,
+      overall: 8.0,
+      stdev: 0.89,
+      num: 4,
     },
     {
       rank: 3,
@@ -41,6 +52,18 @@ const speakerRankings = [
     },
     {
       rank: 4,
+      name: "Hà Nguyễn",
+      team: "nà ná na na chị tịch PC",
+      lis: 3.6,
+      read: 3.6,
+      speak: 3.6,
+      write: 3.6,
+      overall: 3.6,
+      stdev: 0,
+      num: 4,
+    },
+    {
+      rank: 5,
       name: "Chim",
       team: "Nhóm 2 training core tổng",
       lis: 6.7,
@@ -65,7 +88,7 @@ const speakerRankings = [
 ];
 
 return (
-    <main className="bg-[#1B1B1B] min-h-screen">
+    <main className="bg-[#1B1B1B] h-[1000px]">
       <div className="overflow-x-auto speaker-table-wrapper
                     absolute top-[300px] left-[160px] bg-[#14532D] 
                     border-[6px] border-[#C9A227] rounded-2xl">
@@ -87,7 +110,7 @@ return (
 
         <tbody>
           {speakerRankings.map((speaker) => (
-            <tr key={speaker.rank}>
+            <tr key={`${speaker.rank}-${speaker.name}`}>
               <td>{speaker.rank}</td>
               <td>{speaker.name}</td>
               <td>{speaker.team}</td>

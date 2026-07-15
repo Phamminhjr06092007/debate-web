@@ -44,21 +44,30 @@ const motions = [
     setter: "Trang Nhung",
   },
 
-  {
+{
     round: "Round 4",
     motion:
-      "THR every sleepless night spent preparing for IELTS.",
+      "Chúng tôi hối tiếc việc thức trắng đêm trước hôm thi IELTS🐧.",
     infoSlide:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    setter: "DEF",
+      "Chào mừng đến với round 4, inround cuối cùng của 8xDebete Tournament.\nChúc bro break 1st, vượt aim thật xa để tiếp tục đi farm giải🤩\nDù tôi không nhìn thấy trực tiếp quá trình ôn tập của bro, nhưng chắc chắn là bro đã bỏ ra rất nhiều nỗ lực rồi, nên rất mong bro sẽ tự tin vào bản thân và những gì mình chuẩn bị\nCó lẽ đêm nay bro khó có thể có được một giấc ngủ trọn vẹn, vì thế mong rằng điều ấy sẽ không ảnh hưởng đến phong độ của bro ngày mai\nChúc bro sẽ giữ được sự tỉnh táo, bình tĩnh và tự tin để thể hiện đúng những gì mình đã chuẩn bị\nChúc bro có một 'inround cuối' thật đẹp, được tiến vào các 'outround' xa hơn và đạt kết quả xứng đáng nhất\nChúc ngủ ngon.",
+    setter: "Con Ghà",
+  },
+
+  {
+    round: "Semifinals",
+    motion:
+      "Chúng tôi với tư cách là Chu Ngọc Vân Hà sẽ vượt aim để được 9.0 ielts.",
+    infoSlide:
+      "Em chúc chị vha thi ielts tốt và đạt aim của chị nhé. em nghĩ chị sẽ đạt được số điểm mà chị mong muốn tại vì chị đã cố gắng và dành thời gian nhiều cho ielts. em thấy chị kiểu siêu áp lực về điểm ielts mặc dù chị đã siêu nỗ lực trong việc ôn thi ấy. em chúc chị có tâm lý và trạng thái tốt nhất trong phòng thi để thể hiện được hết khả năng của bản thân ạ. em tin chị vha yayy.\nP/s: Hãy được trên 8.0 speaking để xứng đáng với công sức 2 tiếng speaking của mình nha chị 😃.",
+    setter: "Banh",
   },
 
   {
     round: "Grand Final",
     motion:
-      "THBT today's candidate deserves their dream score.",
+      "Chúng tôi tin rằng gãy cái chân gãy cái chân.",
     infoSlide:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Gãy cái chân.",
     setter: "Phạm Minh Jr",
   },
 ];
@@ -131,11 +140,20 @@ return (
 
     <div className="popup-card">
 
-      <h2>Information Slide</h2>
+      <h2>🤩Information Slide🤩</h2>
 
       <div className="round-divider"></div>
 
       <p>{motions[selectedSlide].infoSlide}</p>
+
+      {motions[selectedSlide].round === "Grand Final" && (
+      <audio controls>
+      <source
+      src="/audio/jr_1.mp3"
+      type="audio/mpeg"
+    />
+      </audio>
+)}
 
       <button
       className="info-button"
