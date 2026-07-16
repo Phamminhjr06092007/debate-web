@@ -110,7 +110,7 @@ const closeSlide = () => {
 };
 
 return (
-    <main className="bg-[#1B1B1B] h-[3400px]">
+    <main className="bg-[#1B1B1B] h-[4000px]">
     /*Top Tab*/
       <div className="relative w-[1012px] h-[64px] absolute top-[14px] left-60">
         <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"
