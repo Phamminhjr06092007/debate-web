@@ -7,7 +7,7 @@ export default function MotionsPage() {
 
 /*Nội dung của Tab*/
   const tabs = [
-     { name: "Current Draws", href: "/" },
+     { name: "Current Draws", href: "CurrentDraws" },
      { name: "Team Tab", href: "/Tournaments" },
      { name: "Speaker Tab", href: "/Speakertab" },
      { name: "Results", href: "/profile" },

@@ -78,7 +78,7 @@ const speakerRankings = [
 
   /*Nội dung của Tab*/
   const tabs = [
-     { name: "Current Draws", href: "/" },
+     { name: "Current Draws", href: "/CurrentDraws" },
      { name: "Team Tab", href: "/Tournaments" },
      { name: "Speaker Tab", href: "/Speakertab" },
      { name: "Results", href: "/profile" },
@@ -88,7 +88,7 @@ const speakerRankings = [
 ];
 
 return (
-    <main className="bg-[#1B1B1B] h-[1000px]">
+    <main className="bg-[#1B1B1B] h-[1300px]">
       <div className="overflow-x-auto speaker-table-wrapper
                     absolute top-[300px] left-[160px] bg-[#14532D] 
                     border-[6px] border-[#C9A227] rounded-2xl">
@@ -157,6 +157,18 @@ return (
         <p className="absolute top-[22px] left-[15px] text-4xl font-bold text-white">
         🥳 Speaker Tab 🥳
         </p>
+      </div>
+      
+/*Banner*/
+      <div className="flex justify-center">
+      <div className="w-[768px] h-[432px] absolute top-[750px]">
+        <img src="/images/banner.png" />
+        <div>
+          <p className="font-bold text-white">
+          cre: chim
+          </p>
+        </div>
+      </div>
       </div>
     </main>
 )}
