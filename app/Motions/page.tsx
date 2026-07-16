@@ -44,7 +44,7 @@ const motions = [
     setter: "Trang Nhung",
   },
 
-{
+  {
     round: "Round 4",
     motion:
       "Chúng tôi hối tiếc việc thức trắng đêm trước hôm thi IELTS🐧.",
@@ -52,6 +52,16 @@ const motions = [
       "Chào mừng đến với round 4, inround cuối cùng của 8xDebete Tournament.\nChúc bro break 1st, vượt aim thật xa để tiếp tục đi farm giải🤩\nDù tôi không nhìn thấy trực tiếp quá trình ôn tập của bro, nhưng chắc chắn là bro đã bỏ ra rất nhiều nỗ lực rồi, nên rất mong bro sẽ tự tin vào bản thân và những gì mình chuẩn bị\nCó lẽ đêm nay bro khó có thể có được một giấc ngủ trọn vẹn, vì thế mong rằng điều ấy sẽ không ảnh hưởng đến phong độ của bro ngày mai\nChúc bro sẽ giữ được sự tỉnh táo, bình tĩnh và tự tin để thể hiện đúng những gì mình đã chuẩn bị\nChúc bro có một 'inround cuối' thật đẹp, được tiến vào các 'outround' xa hơn và đạt kết quả xứng đáng nhất\nChúc ngủ ngon.",
     setter: "Con Ghà",
   },
+
+  {
+    round: "Quaterfinals",
+    motion:
+      "Chúng tôi với tư cách là đàn con của puzzles chu, tin rằng vân hà sẽ vượt aim ielts của cô ấy.",
+    infoSlide:
+      "Hi lu c vha tịch pc ~~Chúc c vha thi ielts thật tốt, vượt aim và sẽ đổi lấy đc những thành công xứng đáng với nỗ lực của chị. Ngoài ra, pc cũng yêu c nhiều lém ak =))) c cgang sớm thi xong về với chúng em…. Chúc chị may mắn 🍀 c hãy tự tin, bản lĩnh và cố gắng hết mình chị nhé =))) (e khánh ở pc).",
+    setter: "Ckhanh",
+  },
+
 
   {
     round: "Semifinals",
@@ -83,7 +93,7 @@ const closeSlide = () => {
 };
 
 return (
-    <main className="bg-[#1B1B1B] h-[3300px]">
+    <main className="bg-[#1B1B1B] h-[3400px]">
     /*Top Tab*/
       <div className="relative w-[1012px] h-[64px] absolute top-[14px] left-60">
         <div className="absolute inset-0 bg-[#14532D] border-[6px] border-[#C9A227] rounded-2xl"

@@ -32,5 +32,11 @@ return(
 ))}
         </div>
       </div>
+/*Logo*/
+      <Link href="/">
+      <button className="absolute top-10 left-12">
+      <img src="/images/logo.png" className="logo" />
+      </button>
+      </Link>
   </main>
 )}
