@@ -54,6 +54,15 @@ const motions = [
   },
 
   {
+    round: "Novice Grand Final",
+    motion:
+      "Chúng tôi tin rằng cơ sở thi IELTS nên cung cấp chứng chỉ 8.5 cho vha ngay sau khi thi mà không cần chấm điểm.",
+    infoSlide:
+      "Em xin lỗi vì cái của em đến muộn quá và khi mà chị đọc được thì cũng là khi thì xong rồi. Nhưng mà em tin rằng chị đã làm rất tốt khi thi vừa rồi và không có gì cần lo lắng cả chỉ cần tập trung cho phần tiếp theo thôi. Chúc chị may mắn\nVinh dự là đứa chở chị đi học ielts.",
+    setter: "Cá",
+  },
+
+  {
     round: "Quaterfinals",
     motion:
       "Chúng tôi với tư cách là đàn con của puzzles chu, tin rằng vân hà sẽ vượt aim ielts của cô ấy.",
@@ -61,7 +70,6 @@ const motions = [
       "Hi lu c vha tịch pc ~~Chúc c vha thi ielts thật tốt, vượt aim và sẽ đổi lấy đc những thành công xứng đáng với nỗ lực của chị. Ngoài ra, pc cũng yêu c nhiều lém ak =))) c cgang sớm thi xong về với chúng em…. Chúc chị may mắn 🍀 c hãy tự tin, bản lĩnh và cố gắng hết mình chị nhé =))) (e khánh ở pc).",
     setter: "Ckhanh",
   },
-
 
   {
     round: "Semifinals",
