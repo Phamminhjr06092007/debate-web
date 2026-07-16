@@ -74,6 +74,18 @@ const speakerRankings = [
       stdev: 0,
       num: 4,
     },
+    {
+      rank: 6,
+      name: "Nguyễn Cá",
+      team: "CCVA C",
+      lis: 2,
+      read: 2,
+      speak: 2,
+      write: 2,
+      overall: 2,
+      stdev: 0,
+      num: 4,
+    },
   ];
 
   /*Nội dung của Tab*/
